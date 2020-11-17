@@ -25,9 +25,9 @@ int main() {
 }
 /* Searches a given DNA sequence for validity and determine the locations of triples encoding Threonine 
  * Parameters:
- *  dna sequence given by user, size of the dna string 
+ * 	dna sequence given by user, size of the dna string 
  * Return Value: 
- *  location of triple if found, -1 if invalid string, -2 if valid but no triples found
+ * 	location of triple if found, -1 if invalid string, -2 if valid but no triples found
  */
 void checkSeq(char input[], int size) {
 	int found = 0;
@@ -44,7 +44,6 @@ void checkSeq(char input[], int size) {
 					if (input[(i+1)] == 'C') {
 						
 						if (input[(i+2)] == 'T' || input[(i+2)] == 'C' || input[(i+2)] == 'G' || input[(i+2)] == 'A') {
-							//printf("The locations of the triples encoding Threonine are:%d (%c%c%c)", i, dna[i], dna[i+1], dna[i+2]);
 							printf("%d\n", i);
 							found = 1;
 						}
